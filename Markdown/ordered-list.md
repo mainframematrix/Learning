@@ -36,7 +36,7 @@ renders:
 1. Item 1
 1. Item 2
 
-Snippet 2:
+Snippet 3:
 
 ```markdown
 1. Item 1
@@ -48,7 +48,7 @@ renders:
 1. Item 1
 3. Item 2
 
-Snippet 2:
+Snippet 4:
 
 ```markdown
 1. Item 1
