@@ -5,3 +5,4 @@ Python is a great language for working with multi-dimensional data types and com
 ## Index
 
 - [Hello World](Hello-World.py)
+- [Function](Function.py)
