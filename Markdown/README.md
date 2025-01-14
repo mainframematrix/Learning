@@ -12,3 +12,4 @@ This file will be helping you to navigate through the documentation for markdown
 - [Adding Images](image.md)
 - [Ordered List](ordered-list.md)
 - [Unordered List](unordered-list.md)
+- [Horizontal Rules](horizontal-rules.md)
