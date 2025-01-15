@@ -19,6 +19,15 @@ def return_hello(name: str):
     """
     return "Hello, "+name+"!"
 
+def recursive_factorial(num: int):
+    """
+    Function that uses recursion to find factorial of a number.
+    """
+    if(num<=1):
+        return 1
+    else:
+        return num*recursive_factorial(num-1)
+
 if __name__ == "__main__":
     # Calling hello() function
     print("Calling hello() function...")
@@ -31,4 +40,8 @@ if __name__ == "__main__":
     # Calling return_hello(name: str) function
     print("Calling return_hello(name: str) function...")
     print(return_hello("Github"))
+    print("\n\n")
+    # Calling recursive_factorial(num: int) function
+    print("Calling recursive_factorial(num: int) function...")
+    print("Factorial of 5: " + str(recursive_factorial(5)))
     print("\n\n")
