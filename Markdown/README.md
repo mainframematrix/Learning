@@ -13,3 +13,4 @@ This file will be helping you to navigate through the documentation for markdown
 - [Ordered List](ordered-list.md)
 - [Unordered List](unordered-list.md)
 - [Horizontal Rules](horizontal-rules.md)
+- [Blockquotes](blockquotes.md)
