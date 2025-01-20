@@ -12,6 +12,20 @@ The above snippet renders as follows:
 
 > Add '>' infront of the paragraph
 
+### Multi-paragraph Blockquotes
+
+```markdown
+> Add '>' infront of the paragraph.
+>
+> Next Paragraph
+```
+
+The above snippet renders as follows:
+
+> Add '>' infront of the paragraph
+>
+> Next Paragraph
+
 ## Best Practices
 
 | ✅ Do | ❌ Don't |
