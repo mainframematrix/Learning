@@ -101,7 +101,27 @@ class Cat_Hierarchical(Animal_Hierarchical):
         self.count += 1
         print("Meow!!")
 
+class Person:
+    def __init__(self, name: str, age: int):
+        self.name = name
+        self.age = age
+    def introduction(self):
+        print("Hi! My name is "+self.name+" and I am "+str(self.age)+" years old!")
 
+class Job:
+    def __init__(self,company: str):
+        self.company = company
+    def jobdescription(self):
+        print("I work in "+self.company+".")
+        
+class Employee(Person,Job):
+    def __init__(self,name: str, age: int, company: str):
+        Person.__init__(self,name=name,age=age)
+        Job.__init__(self,company=company)
+    def employeeintro(self):
+        Person.introduction(self)
+        Job.jobdescription(self)
+    
 if __name__ == "__main__":
 
     # Demonstate normal class call
@@ -127,4 +147,9 @@ if __name__ == "__main__":
     cat_hierarchical = Cat_Hierarchical()
     cat_hierarchical.meow()
     cat_hierarchical.remember()
+    print("\n\n")
+    # Demonstrate class call with Multiple Inheritance.
+    print("Demonstrate class call with Multiple Inheritance.")
+    employee = Employee(name="John",age=21,company="GitHub")
+    employee.employeeintro()
     print("\n\n")
