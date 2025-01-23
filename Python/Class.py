@@ -102,25 +102,101 @@ class Cat_Hierarchical(Animal_Hierarchical):
         print("Meow!!")
 
 class Person:
+    """
+    A class about a person that stores name and age and introduces itself
+    """
     def __init__(self, name: str, age: int):
+        """
+        Initializes class with name and age
+        """
         self.name = name
         self.age = age
     def introduction(self):
+        """
+        Introduces itself
+        """
         print("Hi! My name is "+self.name+" and I am "+str(self.age)+" years old!")
 
 class Job:
+    """
+    A class about job
+    """
     def __init__(self,company: str):
+        """
+        Initializes the class with a company name
+        """
         self.company = company
     def jobdescription(self):
+        """
+        Describes where it works
+        """
         print("I work in "+self.company+".")
         
 class Employee(Person,Job):
+    """
+    A class that inherits properties of Person and Job.
+    """
     def __init__(self,name: str, age: int, company: str):
+        """
+        Initializes a class with name, age and company name
+        """
         Person.__init__(self,name=name,age=age)
         Job.__init__(self,company=company)
     def employeeintro(self):
+        """
+        Introduces itself and where it works
+        """
         Person.introduction(self)
         Job.jobdescription(self)
+    
+class Plant:
+    """
+    A class for a plant
+    """
+    def __init__(self):
+        """
+        Initializes its origin from seed
+        """
+        self.origin="seed"
+    def tellorigin(self):
+        """
+        Tells its origin
+        """
+        print("I originate from a seed")
+
+class Tree(Plant):
+    """
+    A class for a tree
+    """
+    def __init__(self):
+        """
+        Initializes its origin from a plant and seed.
+        """
+        super().__init__()
+        self.origin="plant"
+    def tellorigin(self):
+        """
+        Tells its origin
+        """
+        print("I originated from a plant")
+        return super().tellorigin()
+    
+class Fruit(Tree):
+    """
+    A class for a fruit
+    """
+    def __init__(self):
+        """
+        Initializes its origin from a tree, plant and seed.
+        """
+        super().__init__()
+        self.origin = "Plant"
+    def tellorigin(self):
+        """
+        Tells its origin
+        """
+        print("I originate from a Tree")
+        return super().tellorigin()
     
 if __name__ == "__main__":
 
@@ -153,3 +229,7 @@ if __name__ == "__main__":
     employee = Employee(name="John",age=21,company="GitHub")
     employee.employeeintro()
     print("\n\n")
+    # Demonstate class call with Multilevel Inheritance.
+    print("Demonstate class call with Multilevel Inheritance.")
+    fruit = Fruit()
+    fruit.tellorigin()
