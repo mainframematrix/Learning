@@ -27,6 +27,21 @@ def recursive_factorial(num: int):
         return 1
     else:
         return num*recursive_factorial(num-1)
+    
+def functionA(numA: int):
+    """
+    Function that multiplies a number with 2.
+    """
+    print("FunctionA:\n")
+    print("Number A*2: "+str(numA*2))
+    return functionB(numA)
+
+def functionB(numA: int):
+    """
+    Function that prints square of a number.
+    """
+    print("FunctionB:\n")
+    print("Number A^2: "+str(numA**2))
 
 if __name__ == "__main__":
     # Calling hello() function
@@ -45,3 +60,8 @@ if __name__ == "__main__":
     print("Calling recursive_factorial(num: int) function...")
     print("Factorial of 5: " + str(recursive_factorial(5)))
     print("\n\n")
+    # calling functionA that calls functionB
+    print("Calling functionA that calls functionB...")
+    functionA(numA=5)
+    print("\n\n")
+    
