@@ -1,10 +1,16 @@
 def read(file_location: str):
+    """
+    Reads from a file
+    """
     file = open(file_location, "r")
     content = file.read()
     print(content)
     file.close()
 
 def write(file_location: str):
+    """
+    Writes to a file
+    """
     file= open(file_location,"w")
     file.write("Hi Github, I am writing to this file.")
     print("Verification of writing the file:\n")
