@@ -1,1 +1,2 @@
 Hi Github, I am writing to this file.
+Hi Github, I am appending to this file.
