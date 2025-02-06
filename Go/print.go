@@ -1,0 +1,10 @@
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	// Printing "Hello Github!" on stdout.
+	fmt.printf("Hello Github!")
+}

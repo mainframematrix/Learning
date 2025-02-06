@@ -6,3 +6,4 @@ A single repository that helps me share and track what I have learned.
 
 - [MARKDOWN](Markdown/README.md)
 - [Python](Python/README.md)
+- [Go](Go/README.md)
