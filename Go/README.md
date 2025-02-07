@@ -5,3 +5,4 @@ Go is a lightweight programming language used to create lightweight programs whe
 ## Index
 
 - [Hello World](print.go)
+- [Function](function/function.go)
