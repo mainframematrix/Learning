@@ -6,5 +6,5 @@ import (
 
 func main() {
 	// Printing "Hello Github!" on stdout.
-	fmt.printf("Hello Github!")
+	fmt.Printf("Hello Github!")
 }
