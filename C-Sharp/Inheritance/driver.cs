@@ -1,4 +1,5 @@
 using Hierarchical;
+using Simple;
 using Abstraction;
 
 namespace Driver
@@ -9,6 +10,8 @@ namespace Driver
         {
             AbstractionDemonstation abstractionDemonstation = new AbstractionDemonstation();
             abstractionDemonstation.demonstate();
+            SimpleDemonstation SimpleInheritance = new SimpleDemonstation();
+            SimpleInheritance.demonstate();
             HeirarchicalDemonstation heirarchicalInheritance = new HeirarchicalDemonstation();
             heirarchicalInheritance.demonstate();
         }
