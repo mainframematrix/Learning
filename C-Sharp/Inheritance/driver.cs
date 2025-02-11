@@ -1,4 +1,4 @@
-using ClassHierarchicalInheritance;
+using Hierarchical;
 using Abstraction;
 
 namespace Driver
