@@ -1,6 +1,6 @@
 using System;
 
-namespace ClassHierarchicalInheritance
+namespace Hierarchical
 {
     abstract class Human
     {
