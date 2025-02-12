@@ -1,5 +1,6 @@
 using Hierarchical;
 using Simple;
+using Multiple;
 using Abstraction;
 
 namespace Driver
@@ -14,6 +15,9 @@ namespace Driver
             SimpleInheritance.demonstate();
             HeirarchicalDemonstation heirarchicalInheritance = new HeirarchicalDemonstation();
             heirarchicalInheritance.demonstate();
+            MultipleDemonstation multipleInheritance = new MultipleDemonstation();
+            multipleInheritance.demonstate();
+            
         }
     }
 }
