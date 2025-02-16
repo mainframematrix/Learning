@@ -9,3 +9,4 @@ A single repository that helps me share and track what I have learned.
 - [Go](Go/README.md)
 - [C-Sharp](C-Sharp/README.md)
 - [Problems](Problems/README.md)
+- [JavaScript](JavaScript/README.md)
