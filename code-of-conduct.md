@@ -41,3 +41,4 @@ For v0.1.4:
 |4.0.x| Problems | Folder Structure |
 |5.0.x| JavaScript | Folder Structure |
 |5.1.x| ExpressJS | ExpressJS |
+|6.1.x| Docker | Docker |
